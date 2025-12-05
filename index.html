@@ -1,0 +1,151 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DataHub Университета</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="index.html">DataHub</a>
+      <ul class="nav-links">
+        <li><a href="university.html">Об университете</a></li>
+        <li><a href="programs.html">Программы</a></li>
+        <li><a href="admission.html">Приём</a></li>
+        <li><a href="tour.html">3D-тур</a></li>
+        <li><a href="international.html">Международное сотрудничество</a></li>
+        <li><a href="compare.html">Сравнение</a></li>
+      </ul>
+      <div class="accessibility-tools">
+        <button id="fontIncrease">A+</button>
+        <button id="contrastToggle">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Интерактивный DataHub университета — доступный для всех</h1>
+      <p>Платформа создана для слабовидящих и слабослышащих пользователей.</p>
+      <a class="btn" href="university.html">Узнать об университете</a>
+      <a class="btn" href="tour.html">Перейти в виртуальный тур</a>
+    </section>
+  </main>
+</body>
+</html>
+
+<!-- university.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Об университете</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <h1>Об университете</h1>
+  <p>Описание университета, миссия, история, факультеты и структура.</p>
+</body>
+</html>
+
+<!-- programs.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Программы</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h1>Академические программы</h1>
+  <div class="program-list">
+    <div class="program">ИТ</div>
+    <div class="program">Экономика</div>
+    <div class="program">Инженерия</div>
+    <div class="program">Гуманитарные науки</div>
+  </div>
+</body>
+</html>
+
+<!-- admission.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Приём</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h1>Приём</h1>
+  <p>Документы, баллы, процедуры поступления.</p>
+</body>
+</html>
+
+<!-- tour.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D-тур</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h1>Виртуальный 3D-тур</h1>
+  <iframe width="100%" height="500" src="https://kuula.co/share/example"></iframe>
+</body>
+</html>
+
+<!-- international.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Международное сотрудничество</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h1>Международное сотрудничество</h1>
+  <p>Партнёрские университеты, Erasmus+, обмены.</p>
+</body>
+</html>
+
+<!-- compare.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Сравнение программ</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h1>Сравнение программ</h1>
+  <table>
+    <tr><th>Программа</th><th>Цена</th><th>Баллы</th><th>Стажировка</th></tr>
+    <tr><td>ИТ</td><td>800000</td><td>80</td><td>Да</td></tr>
+  </table>
+</body>
+</html>
+
+<!-- css/style.css -->
+/* базовые стили, контраст, крупный текст */
+body { font-family: Arial; line-height: 1.6; padding: 20px; }
+.navbar { display: flex; justify-content: space-between; align-items: center; }
+
+/* js/script.js */
+document.getElementById("fontIncrease")?.addEventListener("click", () => {
+  document.body.style.fontSize = "larger";
+});
+document.getElementById("contrastToggle")?.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
